@@ -588,13 +588,13 @@
             // 폼 데이터 수집
             const formData = new FormData(this);
             const data = {
-                name: formData.get('name'),
-                phone: formData.get('phone'),
-                product: formData.get('product'),
-                options: formData.get('options'),
-                months: formData.get('months'),
-                inquiry: formData.get('inquiry'),
-                timestamp: new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' })
+                성함: formData.get('name'),
+                연락처: formData.get('phone'),
+                구매상품: formData.get('product'),
+                옵션: formData.get('options'),
+                개월수: formData.get('months'),
+                기타문의: formData.get('inquiry'),
+                접수시간: new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' })
             };
             
             console.log('전송할 데이터:', data);
